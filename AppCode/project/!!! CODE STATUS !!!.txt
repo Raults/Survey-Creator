@@ -1,0 +1,59 @@
+Notes:
+1. All pages must be .php
+
+2. All pages which access MySql must have the following line in the beginning of the php code
+<?php include('Online_Surveys.dbconfig.inc'); ?>
+- The MySql database parameters like servername, dbName etc are stored in this file.
+- dbname is "survey_db";
+
+3. session variables: $_SESSION["ADMIN_LOGGED_IN"]=1  # If the user logged in is admin user,
+	or $_SESSION["USER_LOGGED_IN"]=1   # If the user logged in is regular user.
+	$_SESSION["ADMIN_ID"] # Stores admin_id currently logged in.
+	$_SESSION["USER_ID"] # Stores user_id currently logged in.
+
+4. SportsClips_Visit_Survey  .. has some functionalities that we can use.. like for taking the survey; view results/ reports; user response validations; 
+
+5. Insert some data in database tables to test the functionality of the pages.
+
+
+-----------------------------------------------------------------------
+Status:
+0. login_authenticate.php  ->DONE  : Sri:  redirects to admin_homepage.php or
+	user_homepage.php depending on whether the admin/ user has logged in.
+	Sets the session variables: $_SESSION["ADMIN_LOGGED_IN"] & $_SESSION["USER_LOGGED_IN"]
+
+1. login.php 	->DONE	:Sri: verifies user/pass from db.
+Will be updated by akshay.
+
+2. admin_homepage.php	: Mo/ Ryan/ Akshay
+3. admin_profile.php	: Ryan/ Bhavya/ Akshay
+4. admin_create_survey.php	: Sri	->DONE  : Creates a new survey
+4.1 admin_add_questions.php: Sri ->DONE     : Add Questions in db
+4.2 admin_survey_link_questions.php: Sri ->DONE     : Displays list of questions, list of surveys, then adds questions to surveys
+
+
+5. admin_edit_survey.php	: Ryan/ Willy
+6. admin_search_survey.php	: Mo/ Willy
+7. admin_delete_survey.php  (can combine 6,7)	: Mo
+8. admin_view_survey_list.php	: Sri -> DONE: View survey List 
+8.1 admin_view_survey_results.php	: Sri -> OnGoing
+
+9. user_homepage.php	: Mo/ Akshay   : Basic page done by sri
+10. user_profile.php	: Ryan/ Bhavya (can combine 3,10 in single page)
+11. user_view_survey_list.php : Sri -> DONE : Displays the surveys which the user can take or already taken.
+11.1 user_take_survey.php : Sri -> DONE 
+12. user_submit_survey.php : Sri ->  DONE : Inserts response in mysql & shows survey completion is successful.
+
+13. user_signup_page.php: Ryan/ Bhavya/ Akshay
+14. user_edit_profile.php	: Ryan/ Bhavya (can combine 3,10 in single page)
+
+15. logout.php : Destroys sessions & redirects to index.php
+
+16. admin_edit_question.php	: Ryan/ Willy
+17. admin_search_question.php	: Mo/ Willy
+18. admin_delete_question.php  (can combine 6,7)	: Mo
+
+
+
+
+

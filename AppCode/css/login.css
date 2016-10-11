@@ -1,0 +1,126 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+ul{
+  	list-style: none;
+  	text-align: right;
+    margin-top: 15px;
+}
+
+li{
+  	display: inline;
+  	padding-right: 20px;
+}
+
+ul li a{
+    color: black;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+#nav{
+  margin-top: 0%;
+  background-color: #FF9802;
+  height:50px;
+  box-shadow: 0px 2px 5px #888888;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pull-left, #logo, .pull-right{
+  display:inline-block;
+}
+
+#logo{
+  margin-left: 48%;
+  margin-top: 0.5%;
+}
+
+#form{
+  margin-top: 10%;
+}
+
+#username{
+  padding-bottom: 10px;
+}
+
+#loginTitle{
+  font-size: 40px;
+  margin-top: 0%;
+  margin-left: 5%;
+  padding-bottom: 50px;
+  font-weight: 900;
+}
+
+.loginForm{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.buttonSign{
+  margin-left: 63%;
+  background-color: #FF9802;
+  border-color: #FF9802;
+  color:black;
+  font-weight: 500;
+}
+
+.buttonSign:hover{
+  background-color: #FFA726;
+  border-color: #FFA726;
+  color:black;
+}
+
+#signUpLink{
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+#signUpLink a{
+  color: #8B8B8B;
+}
+
+#signUpLink a:hover{
+  color: #3A3A3A;
+}
+
+.form-control{
+  width:500px;
+  padding-right: 25px;
+}
+
+.form-group{
+  margin-left: 22%;
+}
+
+.checkbox{
+  margin-left: 22%;
+}
+
+.form-group, .checkbox, .buttonSign{
+  padding-bottom: 8px;
+}
+
+.VL{
+  width: 2px;
+  height: 200px;
+  background-color: black;
+  margin-left: 14.5%;
+}
+
+.container{
+  width:100%;
+  height:100%;
+}
+
+#login{
+  margin-top: 10%;
+  margin-left: 36%;
+  width: 350px;
+  height: 330px;
+  box-shadow: 0px 2px 5px #888888;
+}
